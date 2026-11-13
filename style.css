@@ -94,6 +94,33 @@ a {
   font-size: 14px;
 }
 
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.store {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.store:hover {
+  filter: brightness(1.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .store {
+    color: #0f1419;
+  }
+}
+
 footer {
   margin-top: 40px;
   color: var(--muted);
